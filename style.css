@@ -349,13 +349,27 @@ footer {
     }
 
 }
-/* PAKSA RAPI */
+/* PAKSA RAPI - GAMBAR UTUH */
+.menu-card {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
 .menu-card img {
   width: 100% !important;
-  height: 160px !important;
-  object-fit: cover !important;
-  object-position: center !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  background: white !important;
   display: block !important;
+}
+
+.menu-card h3 {
+  padding: 12px 10px 0 10px !important;
+}
+
+.menu-card p {
+  padding: 0 10px 15px 10px !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -363,8 +377,4 @@ footer {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 12px !important;
   }
-  .menu-card img {
-    height: 140px !important;
-  }
 }
-
