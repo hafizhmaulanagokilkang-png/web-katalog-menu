@@ -357,7 +357,7 @@ footer {
 
 .menu-card img {
   width: 100% !important;
-  height: auto !important;
+  height: 220px !important;
   aspect-ratio: auto !important;
   object-fit: contain !important;
   background: white !important;
