@@ -359,7 +359,7 @@ footer {
   width: 100% !important;
   height: 220px !important;
   aspect-ratio: auto !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
   background: white !important;
   display: block !important;
 }
