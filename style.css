@@ -1,0 +1,352 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+
+/* NAVBAR */
+.navbar {
+    background: #102d27;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 13px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-icons a {
+    color: #65c99b;
+    font-size: 16px;
+}
+
+.nav-icons a:hover {
+    color: white;
+}
+
+.btn-navbar {
+    background: #32a879;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+/* BANNER */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 45px 10%;
+    gap: 40px;
+    border-bottom: 2px solid #ccc;
+}
+
+.banner-text {
+    flex: 1;
+}
+
+.banner-text h1 {
+    color: #29966d;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #32a879;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.banner-image {
+    flex: 1;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #cce9dc;
+}
+
+
+/* LAYANAN KESEHATAN */
+.menu {
+    padding: 30px 10%;
+    border-bottom: 2px solid #ccc;
+}
+
+.menu h2 {
+    text-align: center;
+    color: #29966d;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-card {
+    background: #d9f0e5;
+    padding: 15px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.menu-card h3 {
+    font-size: 17px;
+    margin: 12px 0;
+    color: #174b39;
+}
+
+.menu-card p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* BOOK AN APPOINTMENT */
+.booking {
+    padding: 60px 10%;
+}
+
+.booking h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    margin-bottom: 25px;
+    color: #174b39;
+}
+
+.booking-container {
+    display: flex;
+    gap: 25px;
+}
+
+.booking form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking input,
+.booking select {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking button {
+    background: #32a879;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 20px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.map {
+    flex: 1;
+    min-height: 300px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: 0;
+}
+
+
+/* TESTIMONI */
+.rekanan {
+    padding: 60px 10%;
+}
+
+.rekanan h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-style: italic;
+    margin-bottom: 35px;
+    color: #174b39;
+}
+
+.comment-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.comment-card {
+    background: #174b39;
+    color: white;
+    padding: 25px;
+    border-radius: 7px;
+}
+
+.comment-card p {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.comment-card h3 {
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.comment-card span {
+    font-size: 12px;
+}
+
+
+/* FOOTER */
+footer {
+    background: #080e0b;
+    color: white;
+    padding: 50px 10% 25px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 30px;
+}
+
+.footer-container h3 {
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+
+.footer-container p {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.footer-container i {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE HP */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner {
+        flex-direction: column;
+        padding: 30px 7%;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .menu {
+        padding: 30px 5%;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .menu-card {
+        padding: 12px;
+    }
+
+    .menu-card img {
+        height: 180px; 
+        object-fit: cover;
+    }
+
+    .booking-container {
+        flex-direction: column;
+    }
+
+    .comment-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
